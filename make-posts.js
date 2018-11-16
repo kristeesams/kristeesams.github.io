@@ -18,7 +18,7 @@ fs.readdir(inFolder, (err, files) => {
 const getTemplate = (filename, num) => {
   return `---
 layout: photo
-title: Photo #${num}
+title: "Photo #${num}"
 filename: ${filename}
 focus: center
 ---
