@@ -10,3 +10,20 @@ a.thumbnail {
   padding-bottom: 60%;
   overflow: hidden;
 }
+
+.sub-desc {
+  font-size: 0.66em;
+  color: #222;
+}
+
+.sub-desc a {
+  display: inline-block;
+}
+
+#header h1 {
+  margin: 0;
+}
+
+#viewer .slide .caption {
+  background: rgba(5,5, 5, 0.75) !important;
+}

@@ -30,10 +30,12 @@
       <img src="{{ site.avatar }}" class="site-avatar" />
       <h1>{{ site.name }}</h1>
       <p>{{ site.description }}</a></p>
-      <ul class="icons">
+      <p class="sub-desc">Interested in working together? <a href="mailto:{{ site.footer-links.email }}">Email me</a>
+        or <a href="https://www.instagram.com/{{ site.footer-links.instagram }}" target="_blank">find me on Instagram</a>!</p>
+      <!-- <ul class="icons">
         <li><a href="https://www.instagram.com/{{ site.footer-links.instagram }}" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
         <li><a href="mailto:{{ site.footer-links.email }}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-      </ul>
+      </ul> -->
     </header>
 
     {{ content }}
