@@ -5,8 +5,8 @@ layout: default
 <section id="thumbnails">
   {% for post in site.posts %}
   <article>
-    <a class="thumbnail" href="{{ site.baseurl}}/images/fulls/{{ post.filename }}" data-position="left center">
-      <img src="{{ site.baseurl}}/images/thumbs/{{ post.filename }}" alt="" data-position="{{ post.focus }}" />
+    <a class="thumbnail" href="{{ site.baseurl}}/images/photos/{{ post.filename }}" data-position="{{ post.focus }}">
+      <img src="{{ site.baseurl}}/images/photos/thumbs/{{ post.filename }}" alt="" data-position="{{ post.focus }}" />
     </a>
     <h2>{{ post.title }}</h2>
     <p>{{ post.content }}</p>
