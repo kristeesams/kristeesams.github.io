@@ -5,6 +5,8 @@ const outFolder = path.resolve(__dirname, './_posts/');
 
 let i = 0;
 fs.readdir(inFolder, (err, files) => {
+  // var sorted = files.sort();
+
   files.forEach(file => {
     i++;
     if (file.endsWith('jpg') || file.endsWith('png')) {
@@ -18,6 +20,7 @@ fs.readdir(inFolder, (err, files) => {
 const getTemplate = (filename, num) => {
   return `---
 layout: photo
+order: ${num}
 title: "Photo #${num}"
 filename: ${filename}
 focus: center

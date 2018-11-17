@@ -3,7 +3,8 @@ layout: default
 ---
 
 <section id="thumbnails">
-  {% for post in site.posts %}
+  {% assign post_list = site.posts | sort:"order" %}
+  {% for post in post_list %}
   <article>
     <a class="thumbnail" href="{{ site.baseurl}}/images/photos/{{ post.filename }}" data-position="{{ post.focus }}">
       <img src="{{ site.baseurl}}/images/photos/thumbs/{{ post.filename }}" alt="" data-position="{{ post.focus }}" />
